@@ -2,9 +2,9 @@ class Solution:
     def countTriplets(self, nums, n, sumo):
     
         nums.sort()
-        count = 0 # number of triplets wth sum less than given value of sum `sumo`
+        count = 0 # number of triplets with sum less than the given value of sum `sumo`
         
-        for i in range(len(nums)-1):
+        for i in range(len(nums)-2):
             l = i+1
             r = len(nums)-1
             
